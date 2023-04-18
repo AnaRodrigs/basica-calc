@@ -1,0 +1,15 @@
+
+<form>
+  <input class="mb-3" type="number" name="numb1" [(ngModel)]="numb1" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  <input type="number" name="numb2" [(ngModel)]="numb2" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+<div class="row p-4">
+  <div class="col "><button type="button"  class="btn btn-outline-dark" (click)="calculo('+')">+</button></div>
+  <div class="col"><button type="button" class="btn btn-outline-dark"  (click)="calculo('-')">-</button></div>
+  <div class="col"><button type="button"  class="btn btn-outline-dark" (click)="calculo('*')">*</button></div>
+  <div class="col"><button type="button"  class="btn btn-outline-dark" (click)="calculo('%')">%</button></div>
+
+</div>
+<input type="number" name="resultado" [(ngModel)]="resultado" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+</form>
